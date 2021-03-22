@@ -23,6 +23,6 @@ routes.put('/post/:id/comment', auth, PostsController.addComment);
 routes.put('/post', auth, upload.single('image'), PostsController.create);
 routes.get('/post/:id', auth, PostsController.get);
 
-//routes.get('/', (req,res) => res.send());
+routes.get('/', (req,res) => res.send());
 
 module.exports = routes;
